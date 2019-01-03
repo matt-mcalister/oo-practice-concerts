@@ -1,6 +1,3 @@
-# - Band should have a method Band#concerts should return an array of all that band's concerts
-# - Band should have a method Band#venues that returns an array of all the venues the band has concerts in
-
 class Band
 
   attr_accessor :name
@@ -30,5 +27,13 @@ class Band
     end
   end
 
-  
+  def play_in_venue(date, venue)
+    Concert.new(date, band, venue)
+  end
+
+  def self.all_introductions
+    self.all.map {|band| "Hello, we are #{band.name} and we're from #{band.hometown}"}
+  end
+
+
 end
