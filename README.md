@@ -8,8 +8,8 @@ ________________
   - A band should be able to change its name, but should not be able to change its hometown
 - Band should have a method Band.all that returns all the instances of Band
 - Band should have a method Band#play_in_venue that takes a venue and date as a string as arguments and books that venue for the band.
-- Band should have a method Band#concerts should return an array of all that band's concerts
 - Band should have a method Band.all_introductions that returns an array of welcome messages for each band: "Hello, we are {insert band name here} and we're from {insert hometown here}"
+- Band should have a method Band#concerts should return an array of all that band's concerts
 - Band should have a method Band#venues that returns an array of all the venues the band has concerts in
 
 #### CONCERT
